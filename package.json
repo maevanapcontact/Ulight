@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Puritanic/udacity-team-project/issues"
   },
-  "homepage": "https://github.com/Puritanic/udacity-team-project#readme"
+  "homepage": "https://github.com/Puritanic/udacity-team-project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
 }

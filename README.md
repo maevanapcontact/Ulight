@@ -22,6 +22,8 @@ The project is using [Normalize.css](https://necolas.github.io/normalize.css/) a
 
 Here is a [GET STARTED SASS TUTORIAL](https://fr.slideshare.net/MaevaNAP/get-started-sass-tutorial-for-ulight-project)
 
+To compile sass files we are using [Gulp](https://gulpjs.com) with several tasks (Sass, rename, watch and BrowserSync). To start using gulp, you have to install [NPM](https://www.npmjs.com/get-npm). In terminal (using terminal short introduction)[https://www.davidbaumgold.com/tutorials/command-line/] you have navigate to Ulight project folder in terminal (hint: on mac you can type ```cd``` to leave the current destination, type again ```cd``` and drag project folder to the terminal window and press Enter ) and install dev-dependencies with ```npm install --only=dev```. Then you have just to run ```gulp``` in terminal (hint: just type "gulp" and press enter) to start compiling sass files automatically on save, reload the browser when save changes to html,css,js files. To stop the process, use key combination ```ctr+c``` in your terminal window. If you are interested more in gulp, there is great tutorial under this [link](https://andy-carter.com/blog/a-beginners-guide-to-the-task-runner-gulp).
+
 Also, you can create a [Trello](https://trello.com/) account as we will use this tool to stay organized.
 
 ## Versioning
