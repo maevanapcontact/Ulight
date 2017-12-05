@@ -44,6 +44,8 @@ We need web designers and graphic designers of all abilities to build the templa
 ### Marketing
 
 We need markters or people that are interested in marketing to make the project in better positioning and present it to the whole community.
+Our board in trello is ready and this is the link https://trello.com/b/6qyC7P5z/marketing 
+you can join us.
 
 ## Get Started
 ### Pull the Project
