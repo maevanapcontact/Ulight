@@ -1,15 +1,20 @@
 {
   "name": "ulight",
   "title": "Ulight CSS framework",
-  "description":
-    "A light Framework for Front-End Developer to build original and artistic websites!",
+  "description": "A light Framework for Front-End Developer to build original and artistic websites!",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/maevanapcontact/Ulight"
   },
-  "keywords": ["sass", "scss", "CSS", "boilerplate", "gulp"],
+  "keywords": [
+    "sass",
+    "scss",
+    "CSS",
+    "boilerplate",
+    "gulp"
+  ],
   "bugs": {
     "url": "https://github.com/maevanapcontact/Ulight/issues"
   },
