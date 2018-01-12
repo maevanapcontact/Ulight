@@ -235,6 +235,7 @@ $pesticide-debug-depth: false;
   grid-template-rows: repeat(16, 1fr);
 }
 
+
 // classes of 3 columns (40% / 40% / 20%) using "fr" units
 
 .col-4-4-2 {
@@ -246,5 +247,53 @@ $pesticide-debug-depth: false;
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     grid-column-gap: 1em;
+}
+
+
+
+// Classes for CSS grid rows from 300px-auto and lower
+
+.row-300 {
+  display: grid;
+  grid-template-rows: minmax(300px, auto);
+}
+
+.row-300-gap {
+  display: grid;
+  grid-template-rows: minmax(300px, auto);
+  grid-row-gap: 1em;
+}
+
+.row-200 {
+  display: grid;
+  grid-template-rows: minmax(200px, auto);
+}
+
+.row-200-gap {
+  display: grid;
+  grid-template-rows: minmax(200px, auto);
+  grid-row-gap: 1em;
+}
+
+.row-150 {
+  display: grid;
+  grid-template-rows: minmax(150px, auto);
+}
+
+.row-150-gap {
+  display: grid;
+  grid-template-rows: minmax(150px, auto);
+  grid-row-gap: 1em;
+}
+
+.row-100 {
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+}
+
+.row-100-gap {
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+  grid-row-gap: 1em;
 }
 
