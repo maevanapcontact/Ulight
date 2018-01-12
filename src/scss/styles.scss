@@ -236,6 +236,21 @@ $pesticide-debug-depth: false;
 }
 
 
+// classes of 3 columns (40% / 40% / 20%) using "fr" units
+
+.col-4-4-2 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+
+.col-4-4-2-gap {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-column-gap: 1em;
+}
+
+
+
 // Classes for CSS grid rows from 300px-auto and lower
 
 .row-300 {
@@ -281,3 +296,4 @@ $pesticide-debug-depth: false;
   grid-template-rows: minmax(100px, auto);
   grid-row-gap: 1em;
 }
+
