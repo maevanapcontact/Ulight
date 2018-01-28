@@ -319,6 +319,18 @@ grid-template-columns: 1fr 3fr 1fr;
 grid-column-gap: 1em;
 }
 
+//clases for grids of 2 columns 30% - 70% using "fr" units
+.col-3-7{
+display: grid;
+grid-template-columns: 3fr 7fr;
+}
+
+.col-3-7-gap{
+display: grid;
+grid-template-columns: 3fr 7fr;
+grid-column-gap: 1em;
+}
+
 //classes for grids of 2 columns 70%-30% using "fr" units
 
 .col-7-3{
