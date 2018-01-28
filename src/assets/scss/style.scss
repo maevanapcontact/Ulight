@@ -1,0 +1,63 @@
+// IMPORT
+@import 'box-sizing';
+@import 'console-theme.scss';
+
+// MIXINS
+@mixin stickEdges {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin afterBlock {
+  content: "";
+  display: block;
+}
+
+// CONTAINERS + ROWS
+.container {
+  @include stickEdges;
+  width: 100%;
+  clear: both;
+  &::after {
+    @include afterBlock;
+  }
+}
+
+.rows {
+  @include stickEdges;
+  width: 100%;
+  clear: both;
+  &::after {
+    @include afterBlock;
+  }
+}
+
+// GRID 12 COLUMNS
+@for $i from 1 to 13 {
+    .col-12-#{$i} {
+        width: (100% * $i) / 12;
+    }
+}
+
+//GRID 2 COLUMNS
+  .col-3-7{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+  }
+
+  .col-3-7-gap-1em{
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-column-gap: 1em;
+  }
+
+//another way to make any grid size. And in the same time defining the margin between cols
+
+@mixin grid($col, $mgn){
+  float: left;
+  margin-right: $mgn;
+  width: ((100% - (($col - 1) * $mgn)) / $col);
+  &:nth-child(#{$col}n){
+      margin-right: 0;
+  }
+}

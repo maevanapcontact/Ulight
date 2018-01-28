@@ -319,6 +319,18 @@ grid-template-columns: 1fr 3fr 1fr;
 grid-column-gap: 1em;
 }
 
+//clases for grids of 2 columns 30% - 70% using "fr" units
+.col-3-7{
+display: grid;
+grid-template-columns: 3fr 7fr;
+}
+
+.col-3-7-gap{
+display: grid;
+grid-template-columns: 3fr 7fr;
+grid-column-gap: 1em;
+}
+
 //classes for grids of 2 columns 70%-30% using "fr" units
 
 .col-7-3{
@@ -331,6 +343,7 @@ display: grid;
 grid-template-columns: 7fr 3fr;
 grid-column-gap: 1em;
 }
+
 
 //classes for grids of 4 columns 10%-40%-40%-10% using "fr" units
 
@@ -423,12 +436,41 @@ grid-column-gap: 1em;
     grid-area: item-4;
 }
 
+<<<<<<< HEAD
 //Grid 04 layout
 .lay-4-container{
   display:grid;
   grid-template-areas:
     'left center center right';
   grid-gap:1em;
+}
+.lay-4-item1{
+  grid-area:left;
+}
+.lay-4-item3{
+  grid-area:right;
+}
+.lay-4-item2{
+  grid-area:center;
+||||||| merged common ancestors
+//Grid 06 layout
+.lay-6-container{
+=======
+//Grid 04 layout
+.lay-4-container{
+>>>>>>> origin/master
+  display:grid;
+<<<<<<< HEAD
+||||||| merged common ancestors
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+=======
+  grid-template-areas:
+    'left center center right';
+>>>>>>> origin/master
+  grid-gap:1em;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(5,1fr);
 }
 .lay-4-item1{
   grid-area:left;
@@ -537,6 +579,7 @@ grid-column-gap: 1em;
 .lay-6-item3{
   grid-row:2/4;
 }
+<<<<<<< HEAD
 
 .lay-6-item4{
   grid-row:2/5;
@@ -547,7 +590,25 @@ grid-column-gap: 1em;
 }
 .lay-6-item6{
   grid-column:1/3;
+||||||| merged common ancestors
+.layout-03-item-4{
+    grid-area: item-4;
+=======
+
+.lay-6-item4{
+  grid-row:2/5;
 }
+
+.lay-6-item5{
+  grid-row:3/4;
+>>>>>>> origin/master
+}
+.lay-6-item6{
+  grid-column:1/3;
+}
+
+
+
 
 
 
