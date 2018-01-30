@@ -1,0 +1,111 @@
+/* We can use normalize css instead */
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --yellow-color:#fa990e;
+    --blue-color:#00b8d4;
+    --gray-color:#cfd8dc;
+}
+::selection{
+    color: var(--yellow-color);
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    /* ,repeat(2,minmax(200px,auto)); */
+    grid-gap: 3rem;
+}
+.about-inner{
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+.about-inner .about-title{
+    color: var(--yellow-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.about-inner .about-summury{
+    color: var(--gray-color);
+    font-family: 'Lato', sans-serif;
+    font-size: .6rem; 
+    line-height: 80%;
+}
+.about-logo{
+    justify-self: center;
+    align-self: center;
+}
+.about-logo-img{
+    padding: 0 0 0 8rem;
+    width: 250px;
+    height: auto;
+}
+.about-history{
+    position: relative;
+    background: var(--gray-color);
+    padding: 0 0 0 25%;
+    height: 80px;
+    align-self: center;
+}
+.about-inner-title{
+    color: var(--yellow-color);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2vw;
+    padding-top: 1.6rem;
+}
+.flow-box{
+    position: absolute;
+    background: var(--blue-color);
+    width: 30%;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    height: 120px;
+}
+.about-inner-description{
+    color: #000;
+    padding: 0.5rem 1rem 0 1rem;
+    font-size: .8rem;
+    font-family: 'Lato', sans-serif; 
+}
+.about-team{
+    position: relative;
+    background: var(--gray-color);
+    padding: 0 0 0 25%;
+    color: var(--yellow-color);
+    height: 80px;
+}
+/* Extra Small devices */
+/* Fix history and team description paraghraphs */
+ @media screen and (max-width:600px){
+    .about-inner-description{
+         font-size: 2.3vw;
+         overflow: auto;
+    }
+} 
+/* Small devices */
+ @media screen and (max-width:840px){
+    .about{
+        grid-gap: 4rem;
+    }
+    .flow-box{
+        width: 60%;
+    }
+    .about-history{
+        padding: 0 0 0 10%;
+    }
+    .about-team{
+        padding: 0 0 0 10%;
+    }
+} 
